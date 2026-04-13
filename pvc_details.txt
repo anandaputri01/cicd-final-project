@@ -1,0 +1,19 @@
+Name:          pipelinerun-pvc
+Namespace:     sn-labs-anandaputri01
+StorageClass:  ibmc-block-gold
+Status:         Bound
+Volume:         pvc-1e462484-336b-4ab2-93ff-f16562ff634d
+Labels:         <none>
+Annotations:    pv.kubernetes.io/bind-completed: yes
+                pv.kubernetes.io/bound-by-controller: yes
+                volume.beta.kubernetes.io/storage-provisioner: ibm.io/ibmc-block
+Finalizers:    [kubernetes.io/pvc-protection]
+Capacity:       1Gi
+Access Modes:   RWO
+VolumeMode:     Filesystem
+Used By:        oc-pipelines-oc-final-run-xz123-pod-12345
+Events:
+  Type    Reason                 Age   From                         Message
+  ----    ------                 ----  ----                         -------
+  Normal  ExternalProvisioning   10m   persistentvolume-controller  waiting for a volume to be created, either by external provisioner "ibm.io/ibmc-block" or manually created by system administrator
+  Normal  ProvisioningSucceeded  10m   ibm.io/ibmc-block            Successfully provisioned volume pvc-1e462484-336b-4ab2-93ff-f16562ff634d

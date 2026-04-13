@@ -1,9 +1,8 @@
-# CI/CD Final Project
+# Customer Account Service
+
+[![Build Status](https://github.com/anandaputri01/cicd-final-project/actions/workflows/ci-build.yaml/badge.svg)](https://github.com/anandaputri01/cicd-final-project/actions/workflows/ci-build.yaml)
 
 This repository contains the final project for the CI/CD Pipeline course on Coursera/Skills Network. It demonstrates an automated CI/CD pipeline using GitHub Actions, Tekton, and OpenShift.
-
-## Author
-- [Your Name Here]
 
 ## Project Description
 A Python-based application that features a fully automated CI/CD pipeline.

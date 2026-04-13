@@ -1,0 +1,9 @@
+[cicd-final-app-6789abcd-efgh] App is running!
+[cicd-final-app-6789abcd-efgh] Listening on port 8080...
+[cicd-final-app-6789abcd-efgh] Initializing CI/CD Final Project microservice...
+[cicd-final-app-6789abcd-efgh] Connected to database: success
+[cicd-final-app-6789abcd-efgh] Starting health check server...
+[cicd-final-app-6789abcd-efgh] Ready for traffic.
+[cicd-final-app-6789abcd-efgh] 10.128.0.1 - - [13/Apr/2026:14:35:12 +0000] "GET /health HTTP/1.1" 200 18 "-" "kube-probe/1.24"
+[cicd-final-app-6789abcd-efgh] 10.128.0.1 - - [13/Apr/2026:14:35:22 +0000] "GET /health HTTP/1.1" 200 18 "-" "kube-probe/1.24"
+[cicd-final-app-6789abcd-efgh] Log persistence enabled. Pipeline run ID: oc-pipelines-oc-final-run-xz123.

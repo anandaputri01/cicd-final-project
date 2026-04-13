@@ -1,0 +1,22 @@
+nosetests -v --with-spec --spec-color tests/
+
+Account Service Tests
+- It should return the index page
+- It should return health status
+- It should create a new account
+- It should get a list of accounts
+- It should read a single account
+- It should update an existing account
+- It should delete an account
+- It should ensure security headers are present
+- It should ensure CORS policy is present
+
+Account Model Tests
+- It should Create an account and assert that it exists
+- It should Update an account
+- It should Delete an account
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.450s
+
+OK

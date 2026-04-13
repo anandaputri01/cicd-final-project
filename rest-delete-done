@@ -1,0 +1,7 @@
+$ curl -X DELETE http://localhost:8080/accounts/1
+$ curl -X GET http://localhost:8080/accounts/1
+{
+  "error": "Not Found",
+  "message": "404 Not Found: Account with id [1] could not be found.",
+  "status": 404
+}

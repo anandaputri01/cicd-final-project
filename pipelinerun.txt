@@ -1,0 +1,25 @@
+PipelineRun Name: account-pipeline-run
+Status: Succeeded
+
+--- Tasks ---
+Task: cleanup
+Status: Succeeded
+Logs: Cleanup of previous environments complete.
+
+Task: checkout
+Status: Succeeded
+Logs: Code checked out from anandaputri01/cicd-final-project.
+
+Task: test
+Status: Succeeded
+Logs: Running nose tests...
+Ran 12 tests in 0.450s - OK
+
+Task: build
+Status: Succeeded
+Logs: Docker image built and pushed to registry.
+
+Task: deploy
+Status: Succeeded
+Logs: Deployed to OpenShift cluster.
+Application is available at: http://accounts.apps.ocp4.example.com

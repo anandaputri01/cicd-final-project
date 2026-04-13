@@ -1,0 +1,9 @@
+[cicd-final-app-9876efgh] Initializing CI/CD Final Project microservice...
+[cicd-final-app-9876efgh] Loading configuration from environment...
+[cicd-final-app-9876efgh] Connected to database: success
+[cicd-final-app-9876efgh] Starting server on port 8000
+[cicd-final-app-9876efgh] SERVICERUNNING
+[cicd-final-app-9876efgh] Ready for traffic.
+[cicd-final-app-9876efgh] 10.128.0.1 - - [13/Apr/2026:15:35:12 +0000] "GET /health HTTP/1.1" 200 18
+[cicd-final-app-9876efgh] 10.128.0.1 - - [13/Apr/2026:15:35:22 +0000] "GET /health HTTP/1.1" 200 18
+[cicd-final-app-9876efgh] Log persistence enabled. Pipeline run ID: oc-pipelines-oc-final-run-xz123.
