@@ -1,0 +1,36 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: oc-pipelines-oc-final
+spec:
+  workspaces:
+    - name: pipeline-workspace
+  tasks:
+    - name: cleanup-workspace
+      taskRef:
+        name: cleanup
+      workspaces:
+        - name: source
+          workspace: pipeline-workspace
+    - name: clone-repository
+      taskRef:
+        name: git-clone
+        kind: ClusterTask
+      params:
+        - name: url
+          value: https://github.com/anandaputri01/cicd-final-project.git
+        - name: revision
+          value: main
+      workspaces:
+        - name: output
+          workspace: pipeline-workspace
+      runAfter:
+        - cleanup-workspace
+    - name: run-tests
+      taskRef:
+        name: nose-test
+      workspaces:
+        - name: source
+          workspace: pipeline-workspace
+      runAfter:
+        - clone-repository
